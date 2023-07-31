@@ -1,14 +1,13 @@
-import getCat from './helpers';
+import getSomeCatImage from './helpers';
 import { useState } from 'react';
 import './index.css';
 
 const GetCat = () => {
     const [image, setImage] = useState('');
 
-    const displayRandomCat = () => {
-      getCat().then(data => {
-          setImage(data[0].url);
-      })
+    const displayRandomCat = async () => {
+      const randomCatImage = await getSomeCatImage();
+      setImage(randomCatImage);
     };
 
     return (
