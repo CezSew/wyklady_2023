@@ -1,0 +1,10 @@
+.cat-button {
+    padding: 1rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.cat-container {
+    display: flex;
+    flex-direction: column;
+}

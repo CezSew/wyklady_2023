@@ -1,0 +1,43 @@
+.lessons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.lessons__lesson-tile {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0.5rem;
+}
+
+.lessons__lesson-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgb(97, 218, 251);
+  border: 5px solid rgb(97, 218, 251);
+}
+
+.lessons__lesson-link-text {
+  display: block;
+  color: white;
+}
+
+.lessons__lesson-link:hover {
+  background-color: white;
+}
+
+.lessons__lesson-link:hover * {
+  color: rgb(97, 218, 251);
+}

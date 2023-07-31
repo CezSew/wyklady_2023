@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+h1, h2, h3 {
+  color: rgb(97, 218, 251);
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.app {
+  background-color: rgb(40, 44, 52);
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.app__container {
+  padding: 30px;
+  max-width: 1260px;
+}
+
+a:hover {
+  text-decoration: none;
+}
