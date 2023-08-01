@@ -1,0 +1,29 @@
+.cv {
+    display: grid;
+    grid-template-columns: 200px max-content;
+    background: white;
+    padding: 2rem;
+    min-height: 90vh;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 800px;
+    margin: auto;
+}
+
+.cv__contact-data {
+    grid-column: 1;
+}
+
+.cv__main {
+    grid-column: 2;
+}
+
+.cv__avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.cv__name {
+    rgb(40, 44, 52);
+}

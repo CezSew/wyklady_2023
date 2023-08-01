@@ -25,8 +25,8 @@
   flex-direction: column;
   font-size: 24px;
   font-weight: bold;
-  background-color: rgb(97, 218, 251);
-  border: 5px solid rgb(97, 218, 251);
+  background-color: rgba(97, 218, 251, 0.7);
+  transition: background-color .3s;
 }
 
 .lessons__lesson-link-text {
@@ -35,9 +35,9 @@
 }
 
 .lessons__lesson-link:hover {
-  background-color: white;
+  background-color: rgba(97, 218, 251, 1);
 }
 
 .lessons__lesson-link:hover * {
-  color: rgb(97, 218, 251);
+  color: rgb(40, 44, 52);
 }

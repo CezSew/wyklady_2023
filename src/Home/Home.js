@@ -9,14 +9,47 @@ const Home = ({ presentationLink }) => {
                 <p>{`Link do prezentacji:`}</p>
                 <a href={presentationLink}>{presentationLink}</a>
             </div>
-            <p>{`Lista lekcji:`}</p>
+            <p>{`Przykłady:`}</p>
             <ul className={`lessons`}>
+                <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/reconciliation">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`Podstawy Reacta- Rekoncyliacja`}
+                        </h3>
+                    </Link>
+                </li>
                 <li className={`lessons__lesson-tile`}>
                     <Link className={`lessons__lesson-link`} to="/randomCat">
                         <h3 className={`lessons__lesson-link-text`}>
-                            {`I. Podstawy Reacta- eventy i stan`}
+                            {`Podstawy Reacta- eventy i stan`}
                         </h3>
-                        <span className={`lessons__lesson-link-text`}>{`getCat.js`}</span>
+                    </Link>
+                </li>
+            </ul>
+            <p>{`Projekty:`}</p>
+            <ul className={`lessons`}>
+                <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/cv-generator">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`Generator CV`}
+                        </h3>
+                    </Link>
+                </li>
+            </ul>
+            <p>{`Ćwiczenia:`}</p>
+            <ul className={`lessons`}>
+                <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/task1">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`JSX: Tworzenie elementów`}
+                        </h3>
+                    </Link>
+                </li>
+                <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/task2">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`Eventy i stan`}
+                        </h3>
                     </Link>
                 </li>
             </ul>

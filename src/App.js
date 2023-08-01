@@ -5,8 +5,12 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import RandomCat from './lessons/randomCat';
+import RandomCat from './examples/randomCat';
 import Home from './Home/Home';
+import ReconciliationExample from './examples/reconciliation/ReconciliationExample';
+import Task2 from './tasks/task2';
+import Task1 from './tasks/task1';
+import CVGenerator from './exercises/CVGenerator';
 
 const PRESENTATION_LINK = 'https://docs.google.com/presentation/d/1G3h2-Q-bOm-877jMMkyaWJvFODeaWHIXWGP0AUdhI2s/edit#slide=id.g25c66934188_0_51';
 
@@ -16,7 +20,11 @@ function App() {
           <main className={`app__container`}>
               <Router>
                     <Routes>
+                        <Route path="/task1" element={<Task1 />} />
+                        <Route path="/task2" element={<Task2 />} />
+                        <Route path="/cv-generator" element={<CVGenerator />} />
                         <Route path="/randomCat" element={<RandomCat />} />
+                        <Route path="/reconciliation" element={<ReconciliationExample />} />
                         <Route path="/" element={<Home presentationLink={PRESENTATION_LINK} />} />
                     </Routes>
               </Router>
