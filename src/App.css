@@ -1,24 +1,51 @@
 * {
   box-sizing: border-box;
-  color: white;
+  color: #3f67bf;
   /*word-break: break-all;*/
 }
 
 h1, h2, h3 {
-  color: rgb(97, 218, 251);
+  color: #3f67bf;
   text-align: center;
 }
 
 p {
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .app {
-  background-color: rgb(40, 44, 52);
+  position: relative;
+  background-color: #fff;
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+  z-index: 0;
+  padding-bottom: 375px;
+}
+
+.app:before, .app:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background:
+          url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTQ0MCAzMjAiPjxwYXRoIGZpbGw9IiM5YjU5YjYiIGZpbGwtb3BhY2l0eT0iMSIgZD0iTTAsMTI4TDQ4LDEyMi43Qzk2LDExNywxOTIsMTA3LDI4OCwxMTcuM0MzODQsMTI4LDQ4MCwxNjAsNTc2LDE5MkM2NzIsMjI0LDc2OCwyNTYsODY0LDIyOS4zQzk2MCwyMDMsMTA1NiwxMTcsMTE1MiwxMDYuN0MxMjQ4LDk2LDEzNDQsMTYwLDEzOTIsMTkyTDE0NDAsMjI0TDE0NDAsMzIwTDEzOTIsMzIwQzEzNDQsMzIwLDEyNDgsMzIwLDExNTIsMzIwQzEwNTYsMzIwLDk2MCwzMjAsODY0LDMyMEM3NjgsMzIwLDY3MiwzMjAsNTc2LDMyMEM0ODAsMzIwLDM4NCwzMjAsMjg4LDMyMEMxOTIsMzIwLDk2LDMyMCw0OCwzMjBMMCwzMjBaIj48L3BhdGg+PC9zdmc+)
+          no-repeat
+          left bottom;
+  background-size: 120%;
+  z-index: -1;
+}
+
+.app:after{
+  background:
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTQ0MCAzMjAiPjxwYXRoIGZpbGw9IiNmM2Y0ZjUiIGZpbGwtb3BhY2l0eT0iMSIgZD0iTTAsMTkyTDM0LjMsMjAyLjdDNjguNiwyMTMsMTM3LDIzNSwyMDYsMjUwLjdDMjc0LjMsMjY3LDM0MywyNzcsNDExLDI1MC43QzQ4MCwyMjQsNTQ5LDE2MCw2MTcsMTQ5LjNDNjg1LjcsMTM5LDc1NCwxODEsODIzLDIxMy4zQzg5MS40LDI0NSw5NjAsMjY3LDEwMjksMjcyQzEwOTcuMSwyNzcsMTE2NiwyNjcsMTIzNCwyNDBDMTMwMi45LDIxMywxMzcxLDE3MSwxNDA2LDE0OS4zTDE0NDAsMTI4TDE0NDAsMEwxNDA1LjcsMEMxMzcxLjQsMCwxMzAzLDAsMTIzNCwwQzExNjUuNywwLDEwOTcsMCwxMDI5LDBDOTYwLDAsODkxLDAsODIzLDBDNzU0LjMsMCw2ODYsMCw2MTcsMEM1NDguNiwwLDQ4MCwwLDQxMSwwQzM0Mi45LDAsMjc0LDAsMjA2LDBDMTM3LjEsMCw2OSwwLDM0LDBMMCwwWiI+PC9wYXRoPjwvc3ZnPg==)
+    no-repeat
+    left top;
+  opacity: 1;
 }
 
 .app__container {
