@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   color: white;
+  /*word-break: break-all;*/
 }
 
 h1, h2, h3 {
