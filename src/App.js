@@ -11,6 +11,10 @@ import ReconciliationExample from './examples/reconciliation/ReconciliationExamp
 import Task2 from './tasks/task2';
 import Task1 from './tasks/task1';
 import CVGenerator from './exercises/CVGenerator';
+import MostWanted from './exercises/mostWanted';
+import UserList from './tasks/map/UserList';
+import Button from './examples/legacyCompare/SimpleButton';
+import Events from "./tasks/events/Events";
 
 const PRESENTATION_LINK = 'https://docs.google.com/presentation/d/1G3h2-Q-bOm-877jMMkyaWJvFODeaWHIXWGP0AUdhI2s/edit#slide=id.g25c66934188_0_51';
 
@@ -20,9 +24,13 @@ function App() {
           <main className={`app__container`}>
               <Router>
                     <Routes>
+                        <Route path="przyklady/button" element={<Button />} />
+                        <Route path="zadania/eventy" element={<Events />} />
+                        <Route path="zadania/map" element={<UserList />} />
                         <Route path="/task1" element={<Task1 />} />
                         <Route path="/task2" element={<Task2 />} />
                         <Route path="/cv-generator" element={<CVGenerator />} />
+                        <Route path="/most-wanted" element={<MostWanted />} />
                         <Route path="/randomCat" element={<RandomCat />} />
                         <Route path="/reconciliation" element={<ReconciliationExample />} />
                         <Route path="/" element={<Home presentationLink={PRESENTATION_LINK} />} />
