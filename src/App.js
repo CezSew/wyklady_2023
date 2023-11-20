@@ -15,6 +15,8 @@ import MostWanted from './exercises/mostWanted';
 import UserList from './tasks/map/UserList';
 import Button from './examples/legacyCompare/SimpleButton';
 import Events from "./tasks/events/Events";
+import Hooks from "./examples/hooks";
+import StateAndEvents from "./exercises/state/StateAndEvents";
 
 const PRESENTATION_LINK = 'https://docs.google.com/presentation/d/1G3h2-Q-bOm-877jMMkyaWJvFODeaWHIXWGP0AUdhI2s/edit#slide=id.g25c66934188_0_51';
 
@@ -25,8 +27,10 @@ function App() {
               <Router>
                     <Routes>
                         <Route path="przyklady/button" element={<Button />} />
+                        <Route path="przyklady/useEffect" element={<Hooks />} />
                         <Route path="zadania/eventy" element={<Events />} />
                         <Route path="zadania/map" element={<UserList />} />
+                        <Route path="zadania/stateAndEvents" element={<StateAndEvents />} />
                         <Route path="/task1" element={<Task1 />} />
                         <Route path="/task2" element={<Task2 />} />
                         <Route path="/cv-generator" element={<CVGenerator />} />

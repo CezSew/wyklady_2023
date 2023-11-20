@@ -30,6 +30,20 @@ const Home = ({ presentationLink }) => {
                         </h3>
                     </Link>
                 </li>
+                <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/przyklady/useEffect">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`useEffect`}
+                        </h3>
+                    </Link>
+                </li>
+                <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/zadania/stateAndEvents">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`Stan, Eventy i Inputy`}
+                        </h3>
+                    </Link>
+                </li>
             </ul>
             <p>{`Przykłady:`}</p>
             <div className={`code-box`}>
