@@ -3,11 +3,7 @@ import {useEffect, useState} from "react";
 const isPalindrome = (value) => value.length > 1 && value.split('').reverse().join('').toLowerCase() === value.toLowerCase();
 
 const StateAndEvents = () => {
-    const [value, setValue] = useState('');
-
-    const handleChangeInputValue = (e) => {
-        setValue(e.target.value);
-    };
+    const handleChangeInputValue = () => {};
 
     return (
         <div>
@@ -16,10 +12,9 @@ const StateAndEvents = () => {
             </p>
             <main>
                 <span>
-                    {isPalindrome(value) ? 'TAK' : 'NIE'}
                     {/* Tutaj wyświetl info */}
                 </span><br/>
-                <input role={'input'} onChange={handleChangeInputValue} value={value}/>
+                <input role={'input'}/>
             </main>
         </div>
     );
