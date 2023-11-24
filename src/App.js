@@ -14,9 +14,9 @@ import CVGenerator from './exercises/CVGenerator';
 import MostWanted from './exercises/mostWanted';
 import UserList from './tasks/map/UserList';
 import Button from './examples/legacyCompare/SimpleButton';
-import Events from "./tasks/events/Events";
 import Hooks from "./examples/hooks";
 import StateAndEvents from "./exercises/state/StateAndEvents";
+import Test from './exercises/sandbox/sandbox';
 
 const PRESENTATION_LINK = 'https://docs.google.com/presentation/d/1G3h2-Q-bOm-877jMMkyaWJvFODeaWHIXWGP0AUdhI2s/edit#slide=id.g25c66934188_0_51';
 
@@ -26,9 +26,9 @@ function App() {
           <main className={`app__container`}>
               <Router>
                     <Routes>
+                        <Route path="sandbox" element={<Test />} />
                         <Route path="przyklady/button" element={<Button />} />
                         <Route path="przyklady/useEffect" element={<Hooks />} />
-                        <Route path="zadania/eventy" element={<Events />} />
                         <Route path="zadania/map" element={<UserList />} />
                         <Route path="zadania/stateAndEvents" element={<StateAndEvents />} />
                         <Route path="/task1" element={<Task1 />} />

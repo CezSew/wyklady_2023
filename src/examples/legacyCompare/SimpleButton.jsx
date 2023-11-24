@@ -1,3 +1,4 @@
+import React from 'react';
 import withDescription from './withDescription';
 
 const Button = () => (

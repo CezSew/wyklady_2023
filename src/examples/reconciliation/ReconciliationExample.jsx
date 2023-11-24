@@ -1,5 +1,13 @@
 import { useEffect, useState } from 'react';
 
+const HOC = ({ children }) => {
+    return (
+        <>
+            {children("to jest test")}
+        </>
+    )
+};
+
 const ReconciliationExample = () => {
     const [controlNumber, setControlNumber] = useState(1);
 
@@ -9,9 +17,21 @@ const ReconciliationExample = () => {
 
     return (
         <main>
-            <p>
+            <p className={`code-box`}>
                 {`Włącz konsolę i obserwuj, co się stanie po zmianie stanu.`}<br/>
             </p>
+
+            <HOC>
+                {(test) => {
+                   console.log(test);
+                    return (
+                       <p>
+                            {`Test`}
+                        </p>
+                   )
+                }}
+            </HOC>
+
             <button onClick={toggleState}>
                 Zmień stan rodzica
             </button><br/>

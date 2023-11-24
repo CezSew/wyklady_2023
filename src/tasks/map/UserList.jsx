@@ -11,6 +11,12 @@ const UserList = () => {
 
     return (
         <div>
+            <div className={`code-box`}>
+                <p>{`- w komponencie ‘UserList’ zwróć listę loginów użytkowników userList jako komponenty ‘ListItem’`}</p>
+                <p>{`- wykorzystaj metodę .map()`}</p>
+                <p>{`- użyj id pojedynczego użytkownika jako atrybutu key`}</p>
+                <p>{`- uruchom testy ‘npm run test UserList.jsx’`}</p>
+            </div>
             <ul>
                 {/* tutaj wyrenderować użytkowników z użyciem ListItem */}
             </ul>

@@ -8,9 +8,18 @@ const Home = ({ presentationLink }) => {
             <div className={`code-box`}>
                 <p>{`Link do oficjalnej dokumentacji:`}</p>
                 <a href={`https://react.dev/learn`}>{`https://react.dev/learn`}</a>
-                <p>{`Link do prezentacji:`}</p>
-                <a href={presentationLink}>{presentationLink}</a>
+                {/*<p>{`Link do prezentacji:`}</p>*/}
+                {/*<a href={presentationLink}>{presentationLink}</a>*/}
             </div>
+            <ul className={`lessons`}>
+                <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/sandbox">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`Piaskownica`}
+                        </h3>
+                    </Link>
+                </li>
+            </ul>
             <p>{`Ćwiczenia:`}</p>
             <div className={`code-box`}>
                 <p>{`Ćwiczenia utrwalające zagadnienia teoretyczne`}</p>
@@ -20,13 +29,6 @@ const Home = ({ presentationLink }) => {
                     <Link className={`lessons__lesson-link`} to="/zadania/map">
                         <h3 className={`lessons__lesson-link-text`}>
                             {`Listy`}
-                        </h3>
-                    </Link>
-                </li>
-                <li className={`lessons__lesson-tile`}>
-                    <Link className={`lessons__lesson-link`} to="/zadania/eventy">
-                        <h3 className={`lessons__lesson-link-text`}>
-                            {`Eventy`}
                         </h3>
                     </Link>
                 </li>
@@ -92,35 +94,35 @@ const Home = ({ presentationLink }) => {
                     </Link>
                 </li>
             </ul>
-            <p>{`Utrwalanie wiedzy:`}</p>
-            <div className={`code-box`}>
-                <p>{`Dla chętnych. Proste zadania na utrwalenie wiedzy, sprawdzane automatycznie przez testy jednostkowe.`}</p>
-                <p>{`Aby uruchomić testy należy użyć komendy npm run test. Można także odpalić testy dla pojedynczego pliku przekazując argument z nazwą pliku, np. npm run test Task1`}</p>
-            </div>
-            <ul className={`lessons`}>
-                <li className={`lessons__lesson-tile`}>
-                    <Link className={`lessons__lesson-link`} to="/task1">
-                        <h3 className={`lessons__lesson-link-text`}>
-                            {`JSX: Tworzenie elementów`}
-                        </h3>
-                    </Link>
-                </li>
-                <li className={`lessons__lesson-tile`}>
-                    <Link className={`lessons__lesson-link`} to="/task3">
-                        <h3 className={`lessons__lesson-link-text`}>
-                            Propsy (ndk)
-                            {/* dostosuj komponent tak, by zamiast propsów przyjął dane z context */}
-                        </h3>
-                    </Link>
-                </li>
-                <li className={`lessons__lesson-tile`}>
-                    <Link className={`lessons__lesson-link`} to="/task2">
-                        <h3 className={`lessons__lesson-link-text`}>
-                            {`Eventy i stan`}
-                        </h3>
-                    </Link>
-                </li>
-            </ul>
+            {/*<p>{`Utrwalanie wiedzy:`}</p>*/}
+            {/*<div className={`code-box`}>*/}
+            {/*    <p>{`Dla chętnych. Proste zadania na utrwalenie wiedzy, sprawdzane automatycznie przez testy jednostkowe.`}</p>*/}
+            {/*    <p>{`Aby uruchomić testy należy użyć komendy npm run test. Można także odpalić testy dla pojedynczego pliku przekazując argument z nazwą pliku, np. npm run test Task1`}</p>*/}
+            {/*</div>*/}
+            {/*<ul className={`lessons`}>*/}
+            {/*    <li className={`lessons__lesson-tile`}>*/}
+            {/*        <Link className={`lessons__lesson-link`} to="/task1">*/}
+            {/*            <h3 className={`lessons__lesson-link-text`}>*/}
+            {/*                {`JSX: Tworzenie elementów`}*/}
+            {/*            </h3>*/}
+            {/*        </Link>*/}
+            {/*    </li>*/}
+            {/*    <li className={`lessons__lesson-tile`}>*/}
+            {/*        <Link className={`lessons__lesson-link`} to="/task3">*/}
+            {/*            <h3 className={`lessons__lesson-link-text`}>*/}
+            {/*                Propsy (ndk)*/}
+            {/*                /!* dostosuj komponent tak, by zamiast propsów przyjął dane z context *!/*/}
+            {/*            </h3>*/}
+            {/*        </Link>*/}
+            {/*    </li>*/}
+            {/*    <li className={`lessons__lesson-tile`}>*/}
+            {/*        <Link className={`lessons__lesson-link`} to="/task2">*/}
+            {/*            <h3 className={`lessons__lesson-link-text`}>*/}
+            {/*                {`Eventy i stan`}*/}
+            {/*            </h3>*/}
+            {/*        </Link>*/}
+            {/*    </li>*/}
+            {/*</ul>*/}
         </>
     )
 }
