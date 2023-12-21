@@ -26,29 +26,5 @@ const UserList = () => {
         </div>
     )
 }
-//
-// const UserList = () => {
-//     const [users, setUsers] = useState(usersList);
-//
-//     const sortUsers = () => {
-//         setUsers([...users.reverse()]);
-//     };
-//
-//     return (
-//         <div>
-//             <ul>
-//                 {users.map((user, index) => (
-//                     <ListItem
-//                         key={user.id}
-//                         user={user}
-//                     />
-//                 ))}
-//             </ul>
-//             <button className={'sort'} type={'button'} onClick={sortUsers}>
-//                 {`Sortuj`}
-//             </button>
-//         </div>
-//     );
-// };
 
 export default UserList;
