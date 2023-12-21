@@ -40,6 +40,13 @@ const Home = ({ presentationLink }) => {
                     </Link>
                 </li>
                 <li className={`lessons__lesson-tile`}>
+                    <Link className={`lessons__lesson-link`} to="/zadania/props">
+                        <h3 className={`lessons__lesson-link-text`}>
+                            {`Props & context`}
+                        </h3>
+                    </Link>
+                </li>
+                <li className={`lessons__lesson-tile`}>
                     <Link className={`lessons__lesson-link`} to="/zadania/stateAndEvents">
                         <h3 className={`lessons__lesson-link-text`}>
                             {`Stan, Eventy i Inputy`}

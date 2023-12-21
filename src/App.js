@@ -17,6 +17,7 @@ import Button from './examples/legacyCompare/SimpleButton';
 import Hooks from "./examples/hooks";
 import StateAndEvents from "./exercises/state/StateAndEvents";
 import Test from './exercises/sandbox/sandbox';
+import ParentComponent from './exercises/props';
 
 const PRESENTATION_LINK = 'https://docs.google.com/presentation/d/1G3h2-Q-bOm-877jMMkyaWJvFODeaWHIXWGP0AUdhI2s/edit#slide=id.g25c66934188_0_51';
 
@@ -31,6 +32,7 @@ function App() {
                         <Route path="przyklady/useEffect" element={<Hooks />} />
                         <Route path="zadania/map" element={<UserList />} />
                         <Route path="zadania/stateAndEvents" element={<StateAndEvents />} />
+                        <Route path="zadania/props" element={<ParentComponent />} />
                         <Route path="/task1" element={<Task1 />} />
                         <Route path="/task2" element={<Task2 />} />
                         <Route path="/cv-generator" element={<CVGenerator />} />

@@ -22,18 +22,19 @@ const Hooks = () => {
     );
 };
 
-const withAdditionalState = (Component) => () => {
-    const [state, setState] = useState(0);
+// const withAdditionalState = (Component) => () => {
+//     const [state, setState] = useState(0);
+//
+//     setTimeout(() => {
+//         setState(state + 1);
+//     }, 3000);
+//
+//     useEffect(() => {
+//         console.log(state);
+//     }, [state]);
+//
+//     return <Component />
+// }
 
-    setTimeout(() => {
-        setState(state + 1);
-    }, 3000);
-
-    useEffect(() => {
-        console.log(state);
-    }, [state]);
-
-    return <Component />
-}
-
-export default withAdditionalState(Hooks);
+// export default withAdditionalState(Hooks);
+export default Hooks;
